@@ -1,0 +1,152 @@
+body {
+  margin: 60px;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #ffffff;
+  top: 60px;  
+  left: 60px;
+  right: 60px;
+  width: 80%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Dosis, Monospace;
+  border-radius: 8%;
+}
+
+.active {
+  background-color: #FFCE04;
+}
+
+.navbar a:hover {
+  background-color: #FFCE04;
+  color: black;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.content {
+  padding: 16px;
+}
+
+.main {
+  margin-top: 100px;
+  max-width: 1000px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  padding-left: 60px;
+  width: 80%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row  > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-free-code-camp {
+  background: #006400;
+  color: white;
+}
+
+.fa-github {
+  background:#333;
+  color: white;
+}
+
+.fa-envelope {
+  background: #FFCE04;
+  color: white;
+}
+
