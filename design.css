@@ -2,6 +2,11 @@ body {
   margin: 60px;
 }
 
+ h1 {
+   font-family: Julius Sans One, Monospace;
+   font-size: 50px;
+ }
+
 .header {
   padding: 30px;
   text-align: center;
@@ -10,7 +15,7 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #ffffff;
-  top: 60px;  
+  top: 60px;
   left: 60px;
   right: 60px;
   width: 80%;
@@ -149,4 +154,3 @@ body {
   background: #FFCE04;
   color: white;
 }
-
