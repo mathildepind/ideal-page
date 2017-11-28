@@ -7,6 +7,11 @@ body {
    font-size: 50px;
  }
 
+ p {
+   font-family: Open Sans, Monospace;
+   font-size: 18px;
+ }
+
 .header {
   padding: 30px;
   text-align: center;
